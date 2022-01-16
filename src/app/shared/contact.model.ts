@@ -2,22 +2,22 @@ import { Address } from "./address.model";
 
 export class Contact {
     constructor(
-        contactId: string,
-        name: string,
-        firstName: string,
-        lastName: string,
-        email: string,
-        altEmail: string,
-        phone: string,
-        altPhone: string,
-        companyName: string,
-        pesel: string,
-        nip: string,
-        regon: string,
-        krs: string,
-        dateCreated: string,
-        dateModified: string,
-        address: Address,
-        correspondenceAddress: Address
+        public contactId: string,
+        public name: string,
+        public firstName: string,
+        public lastName: string,
+        public email: string,
+        public altEmail: string,
+        public phone: string,
+        public altPhone: string,
+        public companyName: string,
+        public pesel: string,
+        public nip: string,
+        public regon: string,
+        public krs: string,
+        public dateCreated: string,
+        public dateModified: string,
+        public address: Address,
+        public correspondenceAddress: Address
     ) {}
 }

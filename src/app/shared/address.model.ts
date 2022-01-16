@@ -1,8 +1,8 @@
 export class Address {
     constructor(
-        addressId: string,
-        street: string,
-        zipCode: string,
-        country: string
+        public addressId: string,
+        public street: string,
+        public zipCode: string,
+        public country: string
     ) {}
 }
