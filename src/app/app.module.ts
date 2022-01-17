@@ -5,6 +5,7 @@ import { Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LawsuitsComponent } from './lawsuits/lawsuits.component';
+import { LawsuitsListComponent } from './lawsuits/lawsuits-list/lawsuits-list.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    LawsuitsComponent
+    LawsuitsComponent,
+    LawsuitsListComponent
   ],
   imports: [
     BrowserModule
