@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { LawsuitsComponent } from './lawsuits/lawsuits.component';
 import { LawsuitsListComponent } from './lawsuits/lawsuits-list/lawsuits-list.component';
 import { LawsuitItemComponent } from './lawsuits/lawsuit-item/lawsuit-item.component';
+import { LawsuitEditComponent } from './lawsuits/lawsuit-edit/lawsuit-edit.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     LawsuitsComponent,
     LawsuitsListComponent,
-    LawsuitItemComponent
+    LawsuitItemComponent,
+    LawsuitEditComponent
   ],
   imports: [
     BrowserModule,
