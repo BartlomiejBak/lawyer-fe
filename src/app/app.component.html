@@ -1,2 +1,14 @@
 <app-header (featureSelected)="onNavigate($event)"></app-header>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-lawsuits *ngIf="loadedFeature === 'lawsuits'"></app-lawsuits>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
