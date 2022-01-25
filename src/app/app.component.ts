@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lawyer-fe';
+  title = 'LawyerCRM';
+  loadedFeature = 'main';
+  
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
