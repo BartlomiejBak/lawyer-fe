@@ -1,0 +1,12 @@
+<p>notes-list works!</p>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+      *ngFor="let note of notes">
+        {{note.noteId}} - {{note.title}}
+      </li>
+    </ul>
+  </div>
+</div>
