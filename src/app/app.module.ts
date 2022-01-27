@@ -12,6 +12,10 @@ import { NotesComponent } from './notes/notes.component';
 import { NotesListComponent } from './notes/notes-list/notes-list.component';
 import { NoteEditComponent } from './notes/note-edit/note-edit.component';
 import { NoteItemComponent } from './notes/note-item/note-item.component';
+import { PaymentsComponent } from './payments/payments.component';
+import { PaymentEditComponent } from './payments/payment-edit/payment-edit.component';
+import { PaymentItemComponent } from './payments/payment-item/payment-item.component';
+import { PaymentsListComponent } from './payments/payments-list/payments-list.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -28,7 +32,11 @@ const appRoutes: Routes = [
     NotesComponent,
     NotesListComponent,
     NoteEditComponent,
-    NoteItemComponent
+    NoteItemComponent,
+    PaymentsComponent,
+    PaymentEditComponent,
+    PaymentItemComponent,
+    PaymentsListComponent
   ],
   imports: [
     BrowserModule,

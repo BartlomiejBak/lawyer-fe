@@ -1,0 +1,12 @@
+<p>payments-list works!</p>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+          *ngFor="let payment of payments">
+        {{payment.paymentId}} - {{payment.comment}}
+      </li>
+    </ul>
+  </div>
+</div>
