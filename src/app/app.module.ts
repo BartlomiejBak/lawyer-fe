@@ -16,6 +16,9 @@ import { PaymentsComponent } from './payments/payments.component';
 import { PaymentEditComponent } from './payments/payment-edit/payment-edit.component';
 import { PaymentItemComponent } from './payments/payment-item/payment-item.component';
 import { PaymentsListComponent } from './payments/payments-list/payments-list.component';
+import { TagsComponent } from './tags/tags.component';
+import { TagsListComponent } from './tags/tags-list/tags-list.component';
+import { TagEditComponent } from './tags/tag-edit/tag-edit.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -36,7 +39,10 @@ const appRoutes: Routes = [
     PaymentsComponent,
     PaymentEditComponent,
     PaymentItemComponent,
-    PaymentsListComponent
+    PaymentsListComponent,
+    TagsComponent,
+    TagsListComponent,
+    TagEditComponent
   ],
   imports: [
     BrowserModule,
