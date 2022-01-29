@@ -19,6 +19,10 @@ import { PaymentsListComponent } from './payments/payments-list/payments-list.co
 import { TagsComponent } from './tags/tags.component';
 import { TagsListComponent } from './tags/tags-list/tags-list.component';
 import { TagEditComponent } from './tags/tag-edit/tag-edit.component';
+import { PoasComponent } from './poas/poas.component';
+import { PoasListComponent } from './poas/poas-list/poas-list.component';
+import { PoaItemComponent } from './poas/poa-item/poa-item.component';
+import { PoaEditComponent } from './poas/poa-edit/poa-edit.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -42,7 +46,11 @@ const appRoutes: Routes = [
     PaymentsListComponent,
     TagsComponent,
     TagsListComponent,
-    TagEditComponent
+    TagEditComponent,
+    PoasComponent,
+    PoasListComponent,
+    PoaItemComponent,
+    PoaEditComponent
   ],
   imports: [
     BrowserModule,

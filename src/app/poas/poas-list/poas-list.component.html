@@ -1,0 +1,12 @@
+<p>poas-list works!</p>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+          *ngFor="let poa of poas">
+        {{poa.poaId}} - {{poa.type}}
+      </li>
+    </ul>
+  </div>
+</div>
