@@ -1,0 +1,12 @@
+<p>events-list works!</p>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+          *ngFor="let event of events">
+        {{event.eventId}} - {{event.title}}
+      </li>
+    </ul>
+  </div>
+</div>
