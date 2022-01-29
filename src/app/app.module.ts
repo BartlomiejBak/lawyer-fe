@@ -31,6 +31,10 @@ import { AddressComponent } from './addresses/address.component';
 import { AddressItemComponent } from './addresses/address-item/address-item.component';
 import { AddressEditComponent } from './addresses/address-edit/address-edit.component';
 import { AddressesListComponent } from './addresses/addresses-list/addresses-list.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ContactsListComponent } from './contacts/contacts-list/contacts-list.component';
+import { ContactItemComponent } from './contacts/contact-item/contact-item.component';
+import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -68,7 +72,11 @@ const appRoutes: Routes = [
     AddressComponent,
     AddressItemComponent,
     AddressEditComponent,
-    AddressesListComponent
+    AddressesListComponent,
+    ContactsComponent,
+    ContactsListComponent,
+    ContactItemComponent,
+    ContactEditComponent
   ],
   imports: [
     BrowserModule,
