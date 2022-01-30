@@ -1,0 +1,12 @@
+<p>courts-list works!</p>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+          *ngFor="let court of courts">
+        {{court.courtId}} - {{court.name}}
+      </li>
+    </ul>
+  </div>
+</div>

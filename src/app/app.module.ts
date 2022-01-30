@@ -35,6 +35,10 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ContactsListComponent } from './contacts/contacts-list/contacts-list.component';
 import { ContactItemComponent } from './contacts/contact-item/contact-item.component';
 import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
+import { CourtsComponent } from './courts/courts.component';
+import { CourtsListComponent } from './courts/courts-list/courts-list.component';
+import { CourtEditComponent } from './courts/court-edit/court-edit.component';
+import { CourtItemComponent } from './courts/court-item/court-item.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -76,7 +80,11 @@ const appRoutes: Routes = [
     ContactsComponent,
     ContactsListComponent,
     ContactItemComponent,
-    ContactEditComponent
+    ContactEditComponent,
+    CourtsComponent,
+    CourtsListComponent,
+    CourtEditComponent,
+    CourtItemComponent
   ],
   imports: [
     BrowserModule,
