@@ -39,6 +39,10 @@ import { CourtsComponent } from './courts/courts.component';
 import { CourtsListComponent } from './courts/courts-list/courts-list.component';
 import { CourtEditComponent } from './courts/court-edit/court-edit.component';
 import { CourtItemComponent } from './courts/court-item/court-item.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TasksListComponent } from './tasks/tasks-list/tasks-list.component';
+import { TaskEditComponent } from './tasks/task-edit/task-edit.component';
+import { TaskItemComponent } from './tasks/task-item/task-item.component';
 
 const appRoutes: Routes = [
   { path: 'lawsuits', component: LawsuitsComponent}
@@ -84,7 +88,11 @@ const appRoutes: Routes = [
     CourtsComponent,
     CourtsListComponent,
     CourtEditComponent,
-    CourtItemComponent
+    CourtItemComponent,
+    TasksComponent,
+    TasksListComponent,
+    TaskEditComponent,
+    TaskItemComponent
   ],
   imports: [
     BrowserModule,

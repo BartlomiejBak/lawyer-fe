@@ -1,0 +1,12 @@
+<p>tasks-list works!</p>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+          *ngFor="let task of tasks">
+        {{task.taskId}} - {{task.deadline}}
+      </li>
+    </ul>
+  </div>
+</div>
