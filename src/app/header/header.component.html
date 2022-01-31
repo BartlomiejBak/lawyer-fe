@@ -3,26 +3,26 @@
       <div class="navbar-header">
         <a href="#" class="navbar-brand">LawyerCRM</a>
       </div>
-  
+
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#" (click)="onSelect('main')">Main</a></li>
-          <li><a href="#" (click)="onSelect('lawsuits')">Lawsuits</a></li>
-          <li><a href="#" (click)="onSelect('tasks')">Tasks</a></li>
-          <li><a href="#" (click)="onSelect('contacts')">Contacts</a></li>
-          <li><a href="#" (click)="onSelect('events')">Events</a></li>
-          <li><a href="#" (click)="onSelect('notes')">Notes</a></li>
-          <li><a href="#" (click)="onSelect('payments')">Payments</a></li>
-          <li><a href="#" (click)="onSelect('poas')">Poas</a></li>
-          <li><a href="#" (click)="onSelect('addresses')">Addresses</a></li>
-          <li><a href="#" (click)="onSelect('courts')">Courts</a></li>
+          <li><a routerLink="/">Main</a></li>
+          <li routerLinkActive="active"><a routerLink="/lawsuits">Lawsuits</a></li>
+          <li routerLinkActive="active"><a routerLink="/tasks">Tasks</a></li>
+          <li routerLinkActive="active"><a routerLink="/contacts">Contacts</a></li>
+          <li routerLinkActive="active"><a routerLink="/events">Events</a></li>
+          <li routerLinkActive="active"><a routerLink="/notes">Notes</a></li>
+          <li routerLinkActive="active"><a routerLink="/payments">Payments</a></li>
+          <li routerLinkActive="active"><a routerLink="/poas">Poas</a></li>
+          <li routerLinkActive="active"><a routerLink="/addresses">Addresses</a></li>
+          <li routerLinkActive="active"><a routerLink="/courts">Courts</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown" appDropdown>
-            <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+            <a style="cursor: pointer" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Export Data</a></li>
-              <li><a href="#">Import Data</a></li>
+              <li><a style="cursor: pointer">Export Data</a></li>
+              <li><a style="cursor: pointer">Import Data</a></li>
             </ul>
           </li>
         </ul>

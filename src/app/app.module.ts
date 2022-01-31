@@ -27,7 +27,7 @@ import { EventsComponent } from './events/events.component';
 import { EventsListComponent } from './events/events-list/events-list.component';
 import { EventItemComponent } from './events/event-item/event-item.component';
 import { EventEditComponent } from './events/event-edit/event-edit.component';
-import { AddressComponent } from './addresses/address.component';
+import { AddressesComponent } from './addresses/addresses.component';
 import { AddressItemComponent } from './addresses/address-item/address-item.component';
 import { AddressEditComponent } from './addresses/address-edit/address-edit.component';
 import { AddressesListComponent } from './addresses/addresses-list/addresses-list.component';
@@ -43,10 +43,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { TasksListComponent } from './tasks/tasks-list/tasks-list.component';
 import { TaskEditComponent } from './tasks/task-edit/task-edit.component';
 import { TaskItemComponent } from './tasks/task-item/task-item.component';
-
-const appRoutes: Routes = [
-  { path: 'lawsuits', component: LawsuitsComponent}
-];
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -77,7 +74,7 @@ const appRoutes: Routes = [
     EventItemComponent,
     EventEditComponent,
     TagEditComponent,
-    AddressComponent,
+    AddressesComponent,
     AddressItemComponent,
     AddressEditComponent,
     AddressesListComponent,
@@ -96,7 +93,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
