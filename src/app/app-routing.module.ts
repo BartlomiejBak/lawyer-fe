@@ -10,9 +10,11 @@ import {PaymentsComponent} from "./payments/payments.component";
 import {PoasComponent} from "./poas/poas.component";
 import {TagsComponent} from "./tags/tags.component";
 import {TasksComponent} from "./tasks/tasks.component";
+import {HomeComponent} from "./home/home.component";
 
 const appRoutes: Routes = [
-  {path: '', redirectTo: '/lawsuits', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'addresses', component: AddressesComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'courts', component: CourtsComponent},
