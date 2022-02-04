@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import {Address} from "../../shared/address.model";
+import { Injectable } from '@angular/core';
+import {Address} from "../shared/address.model";
 
-@Component({
-  selector: 'app-addresses-list',
-  templateUrl: './addresses-list.component.html',
-  styleUrls: ['./addresses-list.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class AddressesListComponent implements OnInit {
+export class AddressServiceService {
+
   addresses: Address[] = [
     new Address('id1',
       'street1',
@@ -27,7 +26,8 @@ export class AddressesListComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  getAddresses() {
+    return this.addresses.slice();
   }
 
 }
