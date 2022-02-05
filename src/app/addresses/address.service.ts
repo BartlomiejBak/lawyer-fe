@@ -4,9 +4,9 @@ import {Address} from "../shared/address.model";
 @Injectable({
   providedIn: 'root'
 })
-export class AddressServiceService {
+export class AddressService {
 
-  addresses: Address[] = [
+  private addresses: Address[] = [
     new Address('id1',
       'street1',
       'Warszawa',

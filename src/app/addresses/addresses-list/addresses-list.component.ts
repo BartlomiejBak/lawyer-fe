@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Address} from "../../shared/address.model";
+import {AddressService} from "../address.service";
 
 @Component({
   selector: 'app-addresses-list',
@@ -7,27 +8,12 @@ import {Address} from "../../shared/address.model";
   styleUrls: ['./addresses-list.component.css']
 })
 export class AddressesListComponent implements OnInit {
-  addresses: Address[] = [
-    new Address('id1',
-      'street1',
-      'Warszawa',
-      '10-123',
-      'Poland'),
-    new Address('id2',
-      'street2',
-      'Warszawa',
-      '10-123',
-      'Poland'),
-    new Address('id3',
-      'street3',
-      'Warszawa',
-      '10-123',
-      'Poland')
-  ];
+  addresses: Address[] = [];
 
-  constructor() { }
+  constructor(private addressService: AddressService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.addresses = this.addressService.getAddresses();
   }
 
 }
