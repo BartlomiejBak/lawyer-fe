@@ -8,7 +8,7 @@ import {Task} from "../../../shared/task.model";
 })
 export class TaskItemComponent implements OnInit {
   @Input() task!: Task;
-  @Input() id!: number;
+  @Input() id!: string;
 
   ngOnInit(): void {
   }

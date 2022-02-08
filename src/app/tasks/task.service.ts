@@ -78,11 +78,7 @@ export class TaskService {
     return this.tasks.slice();
   }
 
-  getFirst() {
-    return this.tasks[0];
-  }
-
-  getTask(id: number) {
-    return this.tasks[id];
+  getTask(id: string): Task {
+    return this.tasks[this.tasks.findIndex(e => e.taskId === id)];
   }
 }

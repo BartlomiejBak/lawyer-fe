@@ -10,7 +10,7 @@ import {ActivatedRoute, Params} from "@angular/router";
 })
 export class TaskDetailComponent implements OnInit {
   task!: Task;
-  id!: number;
+  id!: string;
 
   constructor(private taskService: TaskService,
               private route: ActivatedRoute) {
@@ -20,7 +20,7 @@ export class TaskDetailComponent implements OnInit {
     this.route.params
       .subscribe(
         (params: Params) => {
-          this.id = +params['id'];
+          this.id = params['id'];
           this.task = this.taskService.getTask(this.id);
         }
       )
