@@ -27,17 +27,17 @@ import { EventsListComponent } from './events/events-list/events-list.component'
 import { EventItemComponent } from './events/event-item/event-item.component';
 import { EventEditComponent } from './events/event-edit/event-edit.component';
 import { AddressesComponent } from './addresses/addresses.component';
-import { AddressItemComponent } from './addresses/address-item/address-item.component';
+import { AddressDetailComponent } from './addresses/address-detail/address-detail.component';
 import { AddressEditComponent } from './addresses/address-edit/address-edit.component';
 import { AddressesListComponent } from './addresses/addresses-list/addresses-list.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactsListComponent } from './contacts/contacts-list/contacts-list.component';
-import { ContactItemComponent } from './contacts/contact-item/contact-item.component';
+import { ContactDetailComponent } from './contacts/contact-detail/contact-detail.component';
 import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
 import { CourtsComponent } from './courts/courts.component';
 import { CourtsListComponent } from './courts/courts-list/courts-list.component';
 import { CourtEditComponent } from './courts/court-edit/court-edit.component';
-import { CourtItemComponent } from './courts/court-item/court-item.component';
+import { CourtDetailComponent } from './courts/court-detail/court-detail.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TasksListComponent } from './tasks/tasks-list/tasks-list.component';
 import { TaskEditComponent } from './tasks/task-edit/task-edit.component';
@@ -77,17 +77,17 @@ import { TaskStartComponent } from './tasks/task-start/task-start.component';
     EventEditComponent,
     TagEditComponent,
     AddressesComponent,
-    AddressItemComponent,
+    AddressDetailComponent,
     AddressEditComponent,
     AddressesListComponent,
     ContactsComponent,
     ContactsListComponent,
-    ContactItemComponent,
+    ContactDetailComponent,
     ContactEditComponent,
     CourtsComponent,
     CourtsListComponent,
     CourtEditComponent,
-    CourtItemComponent,
+    CourtDetailComponent,
     TasksComponent,
     TasksListComponent,
     TaskEditComponent,

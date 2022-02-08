@@ -3,11 +3,11 @@ import {Contact} from "../../shared/contact.model";
 import {Address} from "../../shared/address.model";
 
 @Component({
-  selector: 'app-contact-item',
-  templateUrl: './contact-item.component.html',
-  styleUrls: ['./contact-item.component.css']
+  selector: 'app-contact-detail',
+  templateUrl: './contact-detail.component.html',
+  styleUrls: ['./contact-detail.component.css']
 })
-export class ContactItemComponent implements OnInit {
+export class ContactDetailComponent implements OnInit {
   contact: Contact = new Contact(
     '1',
     'NAME',

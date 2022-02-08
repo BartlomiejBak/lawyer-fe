@@ -3,10 +3,10 @@ import {Address} from "../../shared/address.model";
 
 @Component({
   selector: 'app-addresses-item',
-  templateUrl: './address-item.component.html',
-  styleUrls: ['./address-item.component.css']
+  templateUrl: './address-detail.component.html',
+  styleUrls: ['./address-detail.component.css']
 })
-export class AddressItemComponent implements OnInit {
+export class AddressDetailComponent implements OnInit {
   address: Address = new Address(
     'id',
     'street',

@@ -79,6 +79,6 @@ export class TaskService {
   }
 
   getTask(id: string): Task {
-    return this.tasks[this.tasks.findIndex(e => e.taskId === id)];
+    return this.tasks.find(e => e.taskId === id)!;
   }
 }
