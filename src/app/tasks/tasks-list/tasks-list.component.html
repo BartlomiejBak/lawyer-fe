@@ -2,11 +2,9 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item"
-          *ngFor="let task of tasks">
-        {{task.taskId}} - {{task.deadline}}
-      </li>
-    </ul>
+    <app-task-item
+    *ngFor="let taskElement of tasks; let i = index"
+    [task]="taskElement"
+    [id]="i"></app-task-item>
   </div>
 </div>

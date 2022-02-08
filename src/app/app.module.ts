@@ -41,9 +41,11 @@ import { CourtItemComponent } from './courts/court-item/court-item.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TasksListComponent } from './tasks/tasks-list/tasks-list.component';
 import { TaskEditComponent } from './tasks/task-edit/task-edit.component';
-import { TaskItemComponent } from './tasks/task-item/task-item.component';
+import { TaskDetailComponent } from './tasks/task-detail/task-detail.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './home/home.component';
+import { TaskItemComponent } from './tasks/task-list/task-item/task-item.component';
+import { TaskStartComponent } from './tasks/task-start/task-start.component';
 
 @NgModule({
   declarations: [
@@ -89,8 +91,10 @@ import { HomeComponent } from './home/home.component';
     TasksComponent,
     TasksListComponent,
     TaskEditComponent,
+    TaskDetailComponent,
+    HomeComponent,
     TaskItemComponent,
-    HomeComponent
+    TaskStartComponent
   ],
   imports: [
     BrowserModule,

@@ -77,4 +77,12 @@ export class TaskService {
   getTasks() {
     return this.tasks.slice();
   }
+
+  getFirst() {
+    return this.tasks[0];
+  }
+
+  getTask(id: number) {
+    return this.tasks[id];
+  }
 }

@@ -11,6 +11,8 @@ import {PoasComponent} from "./poas/poas.component";
 import {TagsComponent} from "./tags/tags.component";
 import {TasksComponent} from "./tasks/tasks.component";
 import {HomeComponent} from "./home/home.component";
+import {TaskDetailComponent} from "./tasks/task-detail/task-detail.component";
+import {TaskStartComponent} from "./tasks/task-start/task-start.component";
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -24,7 +26,10 @@ const appRoutes: Routes = [
   {path: 'payments', component: PaymentsComponent},
   {path: 'poas', component: PoasComponent},
   {path: 'tags', component: TagsComponent},
-  {path: 'tasks', component: TasksComponent}
+  {path: 'tasks', component: TasksComponent, children: [
+      {path: '', component: TaskStartComponent},
+      {path: ':id', component: TaskDetailComponent}
+    ]}
 ];
 
 @NgModule({
