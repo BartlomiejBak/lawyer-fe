@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LawsuitItemComponent } from './lawsuit-item.component';
+import { EventDetailComponent } from './event-detail.component';
 
-describe('LawsuitItemComponent', () => {
-  let component: LawsuitItemComponent;
-  let fixture: ComponentFixture<LawsuitItemComponent>;
+describe('EventDetailComponent', () => {
+  let component: EventDetailComponent;
+  let fixture: ComponentFixture<EventDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LawsuitItemComponent ]
+      declarations: [ EventDetailComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LawsuitItemComponent);
+    fixture = TestBed.createComponent(EventDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

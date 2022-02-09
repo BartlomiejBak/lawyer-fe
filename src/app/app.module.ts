@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LawsuitsComponent } from './lawsuits/lawsuits.component';
 import { LawsuitsListComponent } from './lawsuits/lawsuits-list/lawsuits-list.component';
-import { LawsuitItemComponent } from './lawsuits/lawsuit-item/lawsuit-item.component';
+import { LawsuitDetailComponent } from './lawsuits/lawsuit-detail/lawsuit-detail.component';
 import { LawsuitEditComponent } from './lawsuits/lawsuit-edit/lawsuit-edit.component';
 import { NotesComponent } from './notes/notes.component';
 import { NotesListComponent } from './notes/notes-list/notes-list.component';
@@ -24,7 +24,7 @@ import { PoaItemComponent } from './poas/poa-item/poa-item.component';
 import { PoaEditComponent } from './poas/poa-edit/poa-edit.component';
 import { EventsComponent } from './events/events.component';
 import { EventsListComponent } from './events/events-list/events-list.component';
-import { EventItemComponent } from './events/event-item/event-item.component';
+import { EventDetailComponent } from './events/event-detail/event-detail.component';
 import { EventEditComponent } from './events/event-edit/event-edit.component';
 import { AddressesComponent } from './addresses/addresses.component';
 import { AddressDetailComponent } from './addresses/address-detail/address-detail.component';
@@ -53,7 +53,7 @@ import { TaskStartComponent } from './tasks/task-start/task-start.component';
     HeaderComponent,
     LawsuitsComponent,
     LawsuitsListComponent,
-    LawsuitItemComponent,
+    LawsuitDetailComponent,
     LawsuitEditComponent,
     NotesComponent,
     NotesListComponent,
@@ -73,7 +73,7 @@ import { TaskStartComponent } from './tasks/task-start/task-start.component';
     TagEditComponent,
     EventsComponent,
     EventsListComponent,
-    EventItemComponent,
+    EventDetailComponent,
     EventEditComponent,
     TagEditComponent,
     AddressesComponent,
