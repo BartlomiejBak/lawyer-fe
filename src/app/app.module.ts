@@ -10,10 +10,10 @@ import { LawsuitEditComponent } from './lawsuits/lawsuit-edit/lawsuit-edit.compo
 import { NotesComponent } from './notes/notes.component';
 import { NotesListComponent } from './notes/notes-list/notes-list.component';
 import { NoteEditComponent } from './notes/note-edit/note-edit.component';
-import { NoteItemComponent } from './notes/note-item/note-item.component';
+import { NoteDetailComponent } from './notes/note-detail/note-detail.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { PaymentEditComponent } from './payments/payment-edit/payment-edit.component';
-import { PaymentItemComponent } from './payments/payment-item/payment-item.component';
+import { PaymentDetailComponent } from './payments/payment-detail/payment-detail.component';
 import { PaymentsListComponent } from './payments/payments-list/payments-list.component';
 import { TagsComponent } from './tags/tags.component';
 import { TagsListComponent } from './tags/tags-list/tags-list.component';
@@ -58,10 +58,10 @@ import { TaskStartComponent } from './tasks/task-start/task-start.component';
     NotesComponent,
     NotesListComponent,
     NoteEditComponent,
-    NoteItemComponent,
+    NoteDetailComponent,
     PaymentsComponent,
     PaymentEditComponent,
-    PaymentItemComponent,
+    PaymentDetailComponent,
     PaymentsListComponent,
     TagsComponent,
     TagsListComponent,

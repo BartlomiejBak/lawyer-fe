@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {Payment} from "../../shared/payment.model";
 
 @Component({
-  selector: 'app-payment-item',
-  templateUrl: './payment-item.component.html',
-  styleUrls: ['./payment-item.component.css']
+  selector: 'app-payment-detail',
+  templateUrl: './payment-detail.component.html',
+  styleUrls: ['./payment-detail.component.css']
 })
-export class PaymentItemComponent implements OnInit {
+export class PaymentDetailComponent implements OnInit {
   payment: Payment = new Payment('id',
     1200.20,
     '11-02-2022',
