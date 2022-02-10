@@ -20,7 +20,7 @@ import { TagsListComponent } from './tags/tags-list/tags-list.component';
 import { TagEditComponent } from './tags/tag-edit/tag-edit.component';
 import { PoasComponent } from './poas/poas.component';
 import { PoasListComponent } from './poas/poas-list/poas-list.component';
-import { PoaItemComponent } from './poas/poa-item/poa-item.component';
+import { PoaDetailComponent } from './poas/poa-detail/poa-detail.component';
 import { PoaEditComponent } from './poas/poa-edit/poa-edit.component';
 import { EventsComponent } from './events/events.component';
 import { EventsListComponent } from './events/events-list/events-list.component';
@@ -68,7 +68,7 @@ import { TaskStartComponent } from './tasks/task-start/task-start.component';
     TagEditComponent,
     PoasComponent,
     PoasListComponent,
-    PoaItemComponent,
+    PoaDetailComponent,
     PoaEditComponent,
     TagEditComponent,
     EventsComponent,

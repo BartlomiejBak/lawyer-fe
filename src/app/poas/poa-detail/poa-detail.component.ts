@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {Poa} from "../../shared/poa.model";
 
 @Component({
-  selector: 'app-poa-item',
-  templateUrl: './poa-item.component.html',
-  styleUrls: ['./poa-item.component.css']
+  selector: 'app-poa-detail',
+  templateUrl: './poa-detail.component.html',
+  styleUrls: ['./poa-detail.component.css']
 })
-export class PoaItemComponent implements OnInit {
+export class PoaDetailComponent implements OnInit {
   poa: Poa = new Poa(
     '1',
     'type',

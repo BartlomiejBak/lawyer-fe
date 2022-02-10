@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PoaItemComponent } from './poa-item.component';
+import { PoaDetailComponent } from './poa-detail.component';
 
-describe('PoaItemComponent', () => {
-  let component: PoaItemComponent;
-  let fixture: ComponentFixture<PoaItemComponent>;
+describe('PoaDetailComponent', () => {
+  let component: PoaDetailComponent;
+  let fixture: ComponentFixture<PoaDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PoaItemComponent ]
+      declarations: [ PoaDetailComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PoaItemComponent);
+    fixture = TestBed.createComponent(PoaDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
