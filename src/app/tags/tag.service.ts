@@ -16,4 +16,8 @@ export class TagService {
   getTags() {
     return this.tags.slice();
   }
+
+  getTag(id: string): Tag {
+    return this.tags.find(e => e.tagId === id)!;
+  }
 }

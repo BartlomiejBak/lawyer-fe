@@ -17,4 +17,8 @@ export class LawsuitService {
   getLawsuits(): Lawsuit[] {
     return this.lawsuits.slice();
   }
+
+  getLawsuit(id: string): Lawsuit {
+    return this.lawsuits.find(e => e.lawsuitId === id)!;
+  }
 }

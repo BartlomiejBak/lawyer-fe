@@ -30,4 +30,8 @@ export class AddressService {
     return this.addresses.slice();
   }
 
+  getAddress(id: string): Address {
+    return this.addresses.find(e => e.addressId === id)!;
+  }
+
 }

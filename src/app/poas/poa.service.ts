@@ -16,4 +16,8 @@ export class PoaService {
   getPoas() {
     return this.poas.slice();
   }
+
+  getPoa(id: string): Poa {
+    return this.poas.find(e => e.poaId === id)!;
+  }
 }

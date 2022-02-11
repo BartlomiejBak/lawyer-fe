@@ -73,4 +73,8 @@ export class ContactService {
     return this.contacts.slice();
   }
 
+  getContact(id: string): Contact {
+    return this.contacts.find(e => e.contactId === id)!;
+  }
+
 }

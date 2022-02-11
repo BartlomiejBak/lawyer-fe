@@ -16,4 +16,8 @@ export class NoteService {
   getNotes() {
     return this.notes.slice();
   }
+
+  getNote(id: string): Note {
+    return this.notes.find(e => e.noteId === id)!;
+  }
 }

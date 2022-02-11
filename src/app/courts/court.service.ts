@@ -24,4 +24,8 @@ export class CourtService {
     return this.courts.slice();
   }
 
+  getCourt(id: string): Court {
+    return this.courts.find(e => e.courtId === id)!;
+  }
+
 }

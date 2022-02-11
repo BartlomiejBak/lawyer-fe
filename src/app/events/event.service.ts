@@ -16,4 +16,8 @@ export class EventService {
   getEvents() {
     return this.events.slice();
   }
+
+  getEvent(id: string): Event {
+    return this.events.find(e => e.eventId === id)!;
+  }
 }

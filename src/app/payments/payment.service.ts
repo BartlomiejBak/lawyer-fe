@@ -38,4 +38,8 @@ export class PaymentService {
     return this.payments.slice();
   }
 
+  getPayment(id: string): Payment {
+    return this.payments.find(e => e.paymentId === id)!;
+  }
+
 }
