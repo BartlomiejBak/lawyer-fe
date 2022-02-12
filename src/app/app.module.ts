@@ -52,6 +52,7 @@ import { CourtStartComponent } from './courts/court-start/court-start.component'
 import { EventStartComponent } from './events/event-start/event-start.component';
 import { LawsuitStartComponent } from './lawsuits/lawsuit-start/lawsuit-start.component';
 import { NoteStartComponent } from './notes/note-start/note-start.component';
+import { PaymentStartComponent } from './payments/payment-start/payment-start.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import { NoteStartComponent } from './notes/note-start/note-start.component';
     CourtStartComponent,
     EventStartComponent,
     LawsuitStartComponent,
-    NoteStartComponent
+    NoteStartComponent,
+    PaymentStartComponent
   ],
   imports: [
     BrowserModule,
