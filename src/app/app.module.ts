@@ -50,6 +50,7 @@ import { AddressStartComponent } from './addresses/address-start/address-start.c
 import { ContactStartComponent } from './contacts/contact-start/contact-start.component';
 import { CourtStartComponent } from './courts/court-start/court-start.component';
 import { EventStartComponent } from './events/event-start/event-start.component';
+import { LawsuitStartComponent } from './lawsuits/lawsuit-start/lawsuit-start.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +103,8 @@ import { EventStartComponent } from './events/event-start/event-start.component'
     AddressStartComponent,
     ContactStartComponent,
     CourtStartComponent,
-    EventStartComponent
+    EventStartComponent,
+    LawsuitStartComponent
   ],
   imports: [
     BrowserModule,
