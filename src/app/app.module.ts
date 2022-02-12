@@ -51,6 +51,7 @@ import { ContactStartComponent } from './contacts/contact-start/contact-start.co
 import { CourtStartComponent } from './courts/court-start/court-start.component';
 import { EventStartComponent } from './events/event-start/event-start.component';
 import { LawsuitStartComponent } from './lawsuits/lawsuit-start/lawsuit-start.component';
+import { NoteStartComponent } from './notes/note-start/note-start.component';
 
 @NgModule({
   declarations: [
@@ -104,7 +105,8 @@ import { LawsuitStartComponent } from './lawsuits/lawsuit-start/lawsuit-start.co
     ContactStartComponent,
     CourtStartComponent,
     EventStartComponent,
-    LawsuitStartComponent
+    LawsuitStartComponent,
+    NoteStartComponent
   ],
   imports: [
     BrowserModule,
