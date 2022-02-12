@@ -53,6 +53,7 @@ import { EventStartComponent } from './events/event-start/event-start.component'
 import { LawsuitStartComponent } from './lawsuits/lawsuit-start/lawsuit-start.component';
 import { NoteStartComponent } from './notes/note-start/note-start.component';
 import { PaymentStartComponent } from './payments/payment-start/payment-start.component';
+import { PoaStartComponent } from './poas/poa-start/poa-start.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +109,8 @@ import { PaymentStartComponent } from './payments/payment-start/payment-start.co
     EventStartComponent,
     LawsuitStartComponent,
     NoteStartComponent,
-    PaymentStartComponent
+    PaymentStartComponent,
+    PoaStartComponent
   ],
   imports: [
     BrowserModule,
