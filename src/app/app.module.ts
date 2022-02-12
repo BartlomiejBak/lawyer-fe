@@ -46,6 +46,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './home/home.component';
 import { TaskItemComponent } from './tasks/task-list/task-item/task-item.component';
 import { TaskStartComponent } from './tasks/task-start/task-start.component';
+import { AddressStartComponent } from './addresses/address-start/address-start.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +95,8 @@ import { TaskStartComponent } from './tasks/task-start/task-start.component';
     TaskDetailComponent,
     HomeComponent,
     TaskItemComponent,
-    TaskStartComponent
+    TaskStartComponent,
+    AddressStartComponent
   ],
   imports: [
     BrowserModule,
