@@ -47,6 +47,7 @@ import { HomeComponent } from './home/home.component';
 import { TaskItemComponent } from './tasks/task-list/task-item/task-item.component';
 import { TaskStartComponent } from './tasks/task-start/task-start.component';
 import { AddressStartComponent } from './addresses/address-start/address-start.component';
+import { ContactStartComponent } from './contacts/contact-start/contact-start.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,8 @@ import { AddressStartComponent } from './addresses/address-start/address-start.c
     HomeComponent,
     TaskItemComponent,
     TaskStartComponent,
-    AddressStartComponent
+    AddressStartComponent,
+    ContactStartComponent
   ],
   imports: [
     BrowserModule,
