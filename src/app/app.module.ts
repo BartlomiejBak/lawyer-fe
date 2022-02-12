@@ -48,6 +48,8 @@ import { TaskItemComponent } from './tasks/task-list/task-item/task-item.compone
 import { TaskStartComponent } from './tasks/task-start/task-start.component';
 import { AddressStartComponent } from './addresses/address-start/address-start.component';
 import { ContactStartComponent } from './contacts/contact-start/contact-start.component';
+import { CourtStartComponent } from './courts/court-start/court-start.component';
+import { EventStartComponent } from './events/event-start/event-start.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +100,9 @@ import { ContactStartComponent } from './contacts/contact-start/contact-start.co
     TaskItemComponent,
     TaskStartComponent,
     AddressStartComponent,
-    ContactStartComponent
+    ContactStartComponent,
+    CourtStartComponent,
+    EventStartComponent
   ],
   imports: [
     BrowserModule,
