@@ -57,6 +57,7 @@ import { PoaStartComponent } from './poas/poa-start/poa-start.component';
 import { AddressItemComponent } from './addresses/addresses-list/address-item/address-item.component';
 import { ContactItemComponent } from './contacts/contacts-list/contact-item/contact-item.component';
 import { CourtItemComponent } from './courts/courts-list/court-item/court-item.component';
+import { EventItemComponent } from './events/events-list/event-item/event-item.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +117,8 @@ import { CourtItemComponent } from './courts/courts-list/court-item/court-item.c
     PoaStartComponent,
     AddressItemComponent,
     ContactItemComponent,
-    CourtItemComponent
+    CourtItemComponent,
+    EventItemComponent
   ],
   imports: [
     BrowserModule,
