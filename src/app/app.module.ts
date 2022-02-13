@@ -59,6 +59,7 @@ import { ContactItemComponent } from './contacts/contacts-list/contact-item/cont
 import { CourtItemComponent } from './courts/courts-list/court-item/court-item.component';
 import { EventItemComponent } from './events/events-list/event-item/event-item.component';
 import { LawsuitItemComponent } from './lawsuits/lawsuits-list/lawsuit-item/lawsuit-item.component';
+import { NoteItemComponent } from './notes/notes-list/note-item/note-item.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +121,8 @@ import { LawsuitItemComponent } from './lawsuits/lawsuits-list/lawsuit-item/laws
     ContactItemComponent,
     CourtItemComponent,
     EventItemComponent,
-    LawsuitItemComponent
+    LawsuitItemComponent,
+    NoteItemComponent
   ],
   imports: [
     BrowserModule,
