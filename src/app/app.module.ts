@@ -60,6 +60,7 @@ import { CourtItemComponent } from './courts/courts-list/court-item/court-item.c
 import { EventItemComponent } from './events/events-list/event-item/event-item.component';
 import { LawsuitItemComponent } from './lawsuits/lawsuits-list/lawsuit-item/lawsuit-item.component';
 import { NoteItemComponent } from './notes/notes-list/note-item/note-item.component';
+import { PaymentItemComponent } from './payments/payments-list/payment-item/payment-item.component';
 
 @NgModule({
   declarations: [
@@ -122,7 +123,8 @@ import { NoteItemComponent } from './notes/notes-list/note-item/note-item.compon
     CourtItemComponent,
     EventItemComponent,
     LawsuitItemComponent,
-    NoteItemComponent
+    NoteItemComponent,
+    PaymentItemComponent
   ],
   imports: [
     BrowserModule,
