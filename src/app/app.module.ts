@@ -55,6 +55,7 @@ import { NoteStartComponent } from './notes/note-start/note-start.component';
 import { PaymentStartComponent } from './payments/payment-start/payment-start.component';
 import { PoaStartComponent } from './poas/poa-start/poa-start.component';
 import { AddressItemComponent } from './addresses/addresses-list/address-item/address-item.component';
+import { ContactItemComponent } from './contacts/contacts-list/contact-item/contact-item.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { AddressItemComponent } from './addresses/addresses-list/address-item/ad
     NoteStartComponent,
     PaymentStartComponent,
     PoaStartComponent,
-    AddressItemComponent
+    AddressItemComponent,
+    ContactItemComponent
   ],
   imports: [
     BrowserModule,
