@@ -44,7 +44,7 @@ import { TaskEditComponent } from './tasks/task-edit/task-edit.component';
 import { TaskDetailComponent } from './tasks/task-detail/task-detail.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './home/home.component';
-import { TaskItemComponent } from './tasks/task-list/task-item/task-item.component';
+import { TaskItemComponent } from './tasks/tasks-list/task-item/task-item.component';
 import { TaskStartComponent } from './tasks/task-start/task-start.component';
 import { AddressStartComponent } from './addresses/address-start/address-start.component';
 import { ContactStartComponent } from './contacts/contact-start/contact-start.component';
@@ -54,6 +54,7 @@ import { LawsuitStartComponent } from './lawsuits/lawsuit-start/lawsuit-start.co
 import { NoteStartComponent } from './notes/note-start/note-start.component';
 import { PaymentStartComponent } from './payments/payment-start/payment-start.component';
 import { PoaStartComponent } from './poas/poa-start/poa-start.component';
+import { AddressItemComponent } from './addresses/addresses-list/address-item/address-item.component';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,8 @@ import { PoaStartComponent } from './poas/poa-start/poa-start.component';
     LawsuitStartComponent,
     NoteStartComponent,
     PaymentStartComponent,
-    PoaStartComponent
+    PoaStartComponent,
+    AddressItemComponent
   ],
   imports: [
     BrowserModule,
