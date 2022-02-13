@@ -56,6 +56,7 @@ import { PaymentStartComponent } from './payments/payment-start/payment-start.co
 import { PoaStartComponent } from './poas/poa-start/poa-start.component';
 import { AddressItemComponent } from './addresses/addresses-list/address-item/address-item.component';
 import { ContactItemComponent } from './contacts/contacts-list/contact-item/contact-item.component';
+import { CourtItemComponent } from './courts/courts-list/court-item/court-item.component';
 
 @NgModule({
   declarations: [
@@ -114,7 +115,8 @@ import { ContactItemComponent } from './contacts/contacts-list/contact-item/cont
     PaymentStartComponent,
     PoaStartComponent,
     AddressItemComponent,
-    ContactItemComponent
+    ContactItemComponent,
+    CourtItemComponent
   ],
   imports: [
     BrowserModule,
