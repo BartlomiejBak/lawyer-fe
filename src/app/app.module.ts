@@ -58,6 +58,7 @@ import { AddressItemComponent } from './addresses/addresses-list/address-item/ad
 import { ContactItemComponent } from './contacts/contacts-list/contact-item/contact-item.component';
 import { CourtItemComponent } from './courts/courts-list/court-item/court-item.component';
 import { EventItemComponent } from './events/events-list/event-item/event-item.component';
+import { LawsuitItemComponent } from './lawsuits/lawsuits-list/lawsuit-item/lawsuit-item.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +119,8 @@ import { EventItemComponent } from './events/events-list/event-item/event-item.c
     AddressItemComponent,
     ContactItemComponent,
     CourtItemComponent,
-    EventItemComponent
+    EventItemComponent,
+    LawsuitItemComponent
   ],
   imports: [
     BrowserModule,
