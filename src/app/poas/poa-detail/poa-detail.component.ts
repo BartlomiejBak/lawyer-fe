@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Poa} from "../../shared/poa.model";
+import {PoaService} from "../poa.service";
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-poa-detail',
@@ -7,20 +9,20 @@ import {Poa} from "../../shared/poa.model";
   styleUrls: ['./poa-detail.component.css']
 })
 export class PoaDetailComponent implements OnInit {
-  poa: Poa = new Poa(
-    '1',
-    'type',
-    '50',
-    true,
-    true,
-    '03-03-2003',
-    '03-03-2023',
-    true,
-    false
-  );
-  constructor() { }
+  poa!: Poa;
+  id!: string;
+
+  constructor(private poaService: PoaService,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.id = params['id'];
+          this.poa = this.poaService.getPoa(this.id);
+        }
+      )
   }
 
 }

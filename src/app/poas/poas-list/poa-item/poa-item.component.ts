@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Poa} from "../../../shared/poa.model";
 
 @Component({
   selector: 'app-poa-item',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./poa-item.component.css']
 })
 export class PoaItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() poa!: Poa;
+  @Input() id!: string;
 
   ngOnInit(): void {
   }
