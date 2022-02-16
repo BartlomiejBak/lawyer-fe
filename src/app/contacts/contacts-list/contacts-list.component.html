@@ -2,11 +2,10 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item"
-          *ngFor="let contact of contacts">
-        {{contact.contactId}} - {{contact.name}}
-      </li>
-    </ul>
+    <app-contact-item
+    *ngFor="let contactElement of contacts"
+    [contact]="contactElement"
+    [id]="contactElement.contactId"
+    ></app-contact-item>
   </div>
 </div>
