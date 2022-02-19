@@ -2,11 +2,9 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item"
-          *ngFor="let court of courts">
-        {{court.courtId}} - {{court.name}}
-      </li>
-    </ul>
+    <app-court-item
+      *ngFor="let courtElement of courts"
+      [court]="courtElement"
+      [id]="courtElement.courtId"></app-court-item>
   </div>
 </div>

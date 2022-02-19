@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Court} from "../../shared/court.model";
-import {Address} from "../../shared/address.model";
+import {CourtService} from "../court.service";
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-court-detail',
@@ -8,13 +9,20 @@ import {Address} from "../../shared/address.model";
   styleUrls: ['./court-detail.component.css']
 })
 export class CourtDetailComponent implements OnInit {
-  court: Court = new Court('1', 'Court nr 1',
-    new Address('1', 'street 2', 'Warsaw', '11-111', 'Poland'),
-    'some random court', '555-555-555');
+  court!: Court;
+  id!: string;
 
-  constructor() { }
+  constructor(private courtService: CourtService,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.id = params['id'];
+          this.court = this.courtService.getCourt(this.id);
+        }
+      )
   }
 
 }

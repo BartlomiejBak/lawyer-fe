@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Court} from "../../../shared/court.model";
 
 @Component({
   selector: 'app-court-item',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./court-item.component.css']
 })
 export class CourtItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() court!: Court;
+  @Input() id!: string;
 
   ngOnInit(): void {
   }
