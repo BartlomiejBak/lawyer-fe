@@ -1,1 +1,10 @@
-<p>event-item works!</p>
+<a
+  style="cursor: pointer;"
+  [routerLink]="[id]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ event.title }}</h4>
+    <p class="list-group-item-text">{{ event.dateTime }}</p>
+  </div>
+</a>
