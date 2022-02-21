@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Lawsuit} from "../../../shared/lawsuit.model";
 
 @Component({
   selector: 'app-lawsuit-item',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lawsuit-item.component.css']
 })
 export class LawsuitItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() lawsuit!: Lawsuit;
+  @Input() id!: string;
 
   ngOnInit(): void {
   }

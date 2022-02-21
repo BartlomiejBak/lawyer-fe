@@ -1,12 +1,10 @@
 <p>lawsuits-list works!</p>
 <hr>
 <div class="row">
-    <div class="col-xs-12">
-        <ul class="list-group">
-            <li class="list-group-item"
-            *ngFor="let lawsuit of lawsuits">
-            {{ lawsuit.lawsuitId }} - {{ lawsuit.name }}
-        </li>
-        </ul>
-    </div>
+  <div class="col-xs-12">
+    <app-lawsuit-item
+      *ngFor="let lawsuitElement of lawsuits"
+      [lawsuit]="lawsuitElement"
+      [id]="lawsuitElement.lawsuitId"></app-lawsuit-item>
+  </div>
 </div>

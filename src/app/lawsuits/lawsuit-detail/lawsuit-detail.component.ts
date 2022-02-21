@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Lawsuit } from 'src/app/shared/lawsuit.model';
+import {LawsuitService} from "../lawsuit.service";
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-lawsuit-detail',
@@ -7,12 +9,21 @@ import { Lawsuit } from 'src/app/shared/lawsuit.model';
   styleUrls: ['./lawsuit-detail.component.css']
 })
 export class LawsuitDetailComponent implements OnInit {
-  lawsuit: Lawsuit = new Lawsuit('1', 'first lawsuit', 'defender', '11-06-2021', '11-06-2021', 'aa01', 500000, 'test lawsuit', [], [], []);
+  lawsuit!: Lawsuit;
+  id!: string;
 
-  constructor() {
+  constructor(private lawsuitService: LawsuitService,
+              private route: ActivatedRoute) {
    }
 
   ngOnInit(): void {
+    this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.id = params['id'];
+          this.lawsuit = this.lawsuitService.getLawsuit(this.id);
+        }
+      )
   }
 
 }
