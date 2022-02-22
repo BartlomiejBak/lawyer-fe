@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Note} from "../../shared/note.model";
+import {NoteService} from "../note.service";
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-note-detail',
@@ -7,11 +9,20 @@ import {Note} from "../../shared/note.model";
   styleUrls: ['./note-detail.component.css']
 })
 export class NoteDetailComponent implements OnInit {
-  note: Note = new Note('id', 'first note', 'something....');
+  note!: Note;
+  id!: string;
 
-  constructor() { }
+  constructor(private noteService: NoteService,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.id = params['id'];
+          this.note = this.noteService.getNote(this.id);
+        }
+      )
   }
 
 }

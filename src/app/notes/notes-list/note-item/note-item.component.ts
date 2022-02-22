@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Note} from "../../../shared/note.model";
 
 @Component({
   selector: 'app-note-item',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./note-item.component.css']
 })
 export class NoteItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() note!: Note;
+  @Input() id!: string;
 
   ngOnInit(): void {
   }
