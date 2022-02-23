@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Payment} from "../../../shared/payment.model";
 
 @Component({
   selector: 'app-payment-item',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./payment-item.component.css']
 })
 export class PaymentItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() payment!: Payment;
+  @Input() id!: string;
 
   ngOnInit(): void {
   }
