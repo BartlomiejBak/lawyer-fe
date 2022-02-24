@@ -29,46 +29,77 @@ import {PaymentStartComponent} from "./payments/payment-start/payment-start.comp
 import {PaymentDetailComponent} from "./payments/payment-detail/payment-detail.component";
 import {PoaStartComponent} from "./poas/poa-start/poa-start.component";
 import {PoaDetailComponent} from "./poas/poa-detail/poa-detail.component";
+import {AddressEditComponent} from "./addresses/address-edit/address-edit.component";
+import {ContactEditComponent} from "./contacts/contact-edit/contact-edit.component";
+import {CourtEditComponent} from "./courts/court-edit/court-edit.component";
+import {EventEditComponent} from "./events/event-edit/event-edit.component";
+import {LawsuitEditComponent} from "./lawsuits/lawsuit-edit/lawsuit-edit.component";
+import {NoteEditComponent} from "./notes/note-edit/note-edit.component";
+import {PaymentEditComponent} from "./payments/payment-edit/payment-edit.component";
+import {PoaEditComponent} from "./poas/poa-edit/poa-edit.component";
+import {TagEditComponent} from "./tags/tag-edit/tag-edit.component";
+import {TaskEditComponent} from "./tasks/task-edit/task-edit.component";
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'addresses', component: AddressesComponent, children: [
       {path: '', component: AddressStartComponent},
-      {path: ':id', component: AddressDetailComponent}
+      {path: 'new', component: AddressEditComponent},
+      {path: ':id', component: AddressDetailComponent},
+      {path: ':id/edit', component: AddressEditComponent}
     ]},
   {path: 'contacts', component: ContactsComponent, children: [
       {path: '', component: ContactStartComponent},
-      {path: ':id', component: ContactDetailComponent}
+      {path: 'new', component: ContactEditComponent},
+      {path: ':id', component: ContactDetailComponent},
+      {path: ':id/edit', component: ContactEditComponent}
     ]},
   {path: 'courts', component: CourtsComponent, children: [
       {path: '', component: CourtStartComponent},
-      {path: ':id', component: CourtDetailComponent}
+      {path: 'new', component: CourtEditComponent},
+      {path: ':id', component: CourtDetailComponent},
+      {path: ':id/new', component: CourtEditComponent}
     ]},
   {path: 'events', component:EventsComponent, children: [
       {path: '', component: EventStartComponent},
-      {path: ':id', component: EventDetailComponent}
+      {path: 'new', component: EventEditComponent},
+      {path: ':id', component: EventDetailComponent},
+      {path: ':id/edit', component: EventEditComponent}
     ]},
   {path: 'lawsuits', component: LawsuitsComponent, children: [
       {path: '', component: LawsuitStartComponent},
-      {path: ':id', component: LawsuitDetailComponent}
+      {path: 'new', component: LawsuitEditComponent},
+      {path: ':id', component: LawsuitDetailComponent},
+      {path: ':id/edit', component: LawsuitEditComponent}
     ]},
   {path: 'notes', component: NotesComponent, children: [
       {path: '', component: NoteStartComponent},
-      {path: ':id', component: NoteDetailComponent}
+      {path: 'new', component: NoteEditComponent},
+      {path: ':id', component: NoteDetailComponent},
+      {path: ':id/edit', component: NoteEditComponent}
     ]},
   {path: 'payments', component: PaymentsComponent, children: [
       {path: '', component: PaymentStartComponent},
-      {path: ':id', component: PaymentDetailComponent}
+      {path: 'new', component: PaymentEditComponent},
+      {path: ':id', component: PaymentDetailComponent},
+      {path: ':id/edit', component: PaymentEditComponent}
     ]},
   {path: 'poas', component: PoasComponent, children: [
       {path: '', component: PoaStartComponent},
-      {path: ':id', component: PoaDetailComponent}
+      {path: 'new', component: PoaEditComponent},
+      {path: ':id', component: PoaDetailComponent},
+      {path: ':id/edit', component: PoaEditComponent}
     ]},
-  {path: 'tags', component: TagsComponent},
+  {path: 'tags', component: TagsComponent, children: [
+      {path: 'new', component: TagEditComponent},
+      {path: ':id/edit', component: TagEditComponent}
+    ]},
   {path: 'tasks', component: TasksComponent, children: [
       {path: '', component: TaskStartComponent},
-      {path: ':id', component: TaskDetailComponent}
+      {path: 'new', component: TaskEditComponent},
+      {path: ':id', component: TaskDetailComponent},
+      {path: ':id/edit', component: TaskEditComponent}
     ]}
 ];
 
