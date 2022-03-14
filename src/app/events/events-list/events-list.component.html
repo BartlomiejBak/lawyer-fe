@@ -1,12 +1,14 @@
-<p>events-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn btn-success" (click)="onNewEvent()">New event</div>
+  </div>
+</div>
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item"
-          *ngFor="let event of events">
-        {{event.eventId}} - {{event.title}}
-      </li>
-    </ul>
+    <app-event-item
+      *ngFor="let eventElement of events"
+      [event]="eventElement"
+      [id]="eventElement.eventId"></app-event-item>
   </div>
 </div>

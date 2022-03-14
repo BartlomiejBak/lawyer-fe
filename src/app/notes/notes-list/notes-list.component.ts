@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Note} from "../../shared/note.model";
+import {NoteService} from "../note.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-notes-list',
@@ -7,15 +9,18 @@ import {Note} from "../../shared/note.model";
   styleUrls: ['./notes-list.component.css']
 })
 export class NotesListComponent implements OnInit {
-  notes: Note[] = [
-    new Note('1', 'title 1', 'text 1'),
-    new Note('2', 'title 2', 'text 2'),
-    new Note('3', 'title 3', 'text 3'),
-  ];
+  notes: Note[] = [];
 
-  constructor() { }
+  constructor(private noteService: NoteService,
+              private router: Router,
+              private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.notes = this.noteService.getNotes();
+  }
+
+  onNewNote() {
+    this.router.navigate(['new'], {relativeTo: this.route})
   }
 
 }

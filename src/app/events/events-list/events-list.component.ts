@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Event} from "../../shared/event.model";
+import {EventService} from "../event.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-events-list',
@@ -7,14 +9,19 @@ import {Event} from "../../shared/event.model";
   styleUrls: ['./events-list.component.css']
 })
 export class EventsListComponent implements OnInit {
-  events: Event[] = [
-    new Event('5', 'title 1', '01-01-2001', 'some desc'),
-    new Event('6', 'title 2', '02-01-2001', 'some desc'),
-    new Event('7', 'title 3', '03-01-2001', 'some desc')
-  ];
-  constructor() { }
+  events: Event[] = [];
 
-  ngOnInit(): void {
+  constructor(private eventService: EventService,
+              private router: Router,
+              private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.events = this.eventService.getEvents();
   }
+
+  onNewEvent() {
+    this.router.navigate(['new'], {relativeTo: this.route})
+  }
+
 
 }

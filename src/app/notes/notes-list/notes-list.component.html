@@ -1,12 +1,15 @@
-<p>notes-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn btn-success" (click)="onNewNote()">New note</div>
+  </div>
+</div>
+<hr>
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item"
-      *ngFor="let note of notes">
-        {{note.noteId}} - {{note.title}}
-      </li>
-    </ul>
+    <app-note-item
+      *ngFor="let noteElement of notes"
+      [note]="noteElement"
+      [id]="noteElement.noteId"></app-note-item>
   </div>
 </div>

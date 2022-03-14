@@ -1,12 +1,15 @@
-<p>tasks-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn btn-success" (click)="onNewTask()">New task</div>
+  </div>
+</div>
+<hr>
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item"
-          *ngFor="let task of tasks">
-        {{task.taskId}} - {{task.deadline}}
-      </li>
-    </ul>
+    <app-task-item
+    *ngFor="let taskElement of tasks"
+    [task]="taskElement"
+    [id]="taskElement.taskId"></app-task-item>
   </div>
 </div>
