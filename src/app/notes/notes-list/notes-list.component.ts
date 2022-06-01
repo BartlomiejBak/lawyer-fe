@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Note} from "../../shared/note.model";
 import {NoteService} from "../note.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-notes-list',
@@ -10,6 +11,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class NotesListComponent implements OnInit {
   notes: Note[] = [];
+  private notesChangeSubscription!: Subscription;
 
   constructor(private noteService: NoteService,
               private router: Router,
@@ -17,6 +19,12 @@ export class NotesListComponent implements OnInit {
 
   ngOnInit() {
     this.notes = this.noteService.getNotes();
+    this.notesChangeSubscription = this.noteService.notesChanged
+      .subscribe(
+        (notes: Note[]) => {
+          this.notes = notes;
+        }
+      )
   }
 
   onNewNote() {

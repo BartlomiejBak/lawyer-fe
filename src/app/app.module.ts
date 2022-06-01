@@ -62,6 +62,7 @@ import { LawsuitItemComponent } from './lawsuits/lawsuits-list/lawsuit-item/laws
 import { NoteItemComponent } from './notes/notes-list/note-item/note-item.component';
 import { PaymentItemComponent } from './payments/payments-list/payment-item/payment-item.component';
 import { PoaItemComponent } from './poas/poas-list/poa-item/poa-item.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -130,6 +131,7 @@ import { PoaItemComponent } from './poas/poas-list/poa-item/poa-item.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
